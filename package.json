@@ -1,0 +1,22 @@
+{
+  "name": "enu2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "get:actions": "node utils/getActions.js",
+    "get:memos": "node utils/getMemos.js",
+    "get:accounts": "node utils/getAccounts.js",
+    "get:all": "npm run get:actions && npm run get:memos && npm run get:accounts",
+    "filter": "node utils/filterAccounts.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "fs": "0.0.1-security",
+    "node-fetch": "^2.6.1"
+  }
+}
